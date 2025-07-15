@@ -57,6 +57,3 @@ y_pred = (y_pred_proba > 0.5).astype(int)
 print("\nClassification Report:")
 print(classification_report(y_test, y_pred))
 print("ROC-AUC Score:", roc_auc_score(y_test, y_pred_proba))
-
-# Save the model (optional)
-model.save('creditcard_fraud_model.h5')
